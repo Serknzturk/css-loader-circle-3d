@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Loader Circle 3D</title>
+  <link rel="stylesheet" type="text/css" href="loader-circle-3d.css">
+  <script type="text/javascript">
+    const bodyOnload = () => {
+      /*
+      * This is just a simple timeout. You should use your own JavaScript to add "done" class.
+      */
+      setTimeout(()=>document.querySelector('.loader').classList.add('done'),4000);
+
+    }
+  </script>
+</head>
+<body onload="bodyOnload()">
+  <div class="loader">
+    <span class="loader-done"></span>
+    <span class="circle c1"></span>
+    <span class="circle c2"></span>
+    <span class="circle c3"></span>
+  </div>
+</body>
+</html>
+
